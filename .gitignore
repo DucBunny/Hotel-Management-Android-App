@@ -1,15 +1,32 @@
+# --- Gradle ---
+.gradle/
+build/
+
+# --- IntelliJ/Android Studio ---
+.idea/*
+!.idea/codeStyles/
 *.iml
-.gradle
+*.iws
+*.ipr
+out/
+
+# --- Android Specific ---
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.dex
+
+# --- Log files ---
+*.log
+
+# --- OS Specific ---
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+Thumbs.db
+
+# --- Secrets ---
+*.jks
+*.keystore
+secrets.properties
